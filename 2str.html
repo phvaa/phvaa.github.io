@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Портфолио Пыховой Анны</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body >
+	<h1 align="center">Сайт иллюстратора-живописца Пыховой Анны</h1>	<br>
+	<A HREF= "1str.html" ><IMG align="left"  alt = «картинку_съела_кошка» border = 2  hspace = 2 vspace =2 src="cats.gif" "" width="100" 	height="100"></A>
+	<h2>Работы-пейзажи для иллюстраций, академические натюрморты и блочный портрет </h2>
+	<p>Работы продаются и выполняются под заказ на крупных форматах,чтобы рассчитать стоимость,введите формат :А1-"5",A2-"4",A3-"3",A4-"2",ОТКРЫТКА-0.5</p>
+<body>
+    <input type="text" id="numberField" placeholder="Введите формат заказа">
+    <button onclick="checkInput()">Рассчитать стоимость заказа</button>
+    <p id="result"></p>
+
+    <script>
+        function checkInput() {
+            const input = document.getElementById('numberField').value;
+            if (isNaN(input) || input.trim() === '') {
+                document.getElementById('result').innerText = "Укажите верный формат работы";
+            } else {
+                const number = parseFloat(input);
+                const result = number *1000; 
+                document.getElementById('result').innerText = "Стоимость вашего товара составит " + result + "рублей";
+            }
+        }
+    </script>
+</body>
+	<center>
+	<a href="3str.html">Чтобы заказать портрет или иллюстрацию под ваши пожелания,перейдите на следующую страницу</a>
+	</center>
+	<BR>
+	<IMG align=left alt = «картинку_съела_кошка» border = 0  hspace = 2 vspace =2 src= "r17.jpg" width="370" height="500">
+	<IMG align=left alt = «картинку_съела_кошка» border = 0  hspace = 2 vspace =2 src= "r15.jpg" width="350" height="500">
+	<IMG align=left alt = «картинку_съела_кошка» border = 0  hspace = 2 vspace =2 src= "r16.jpg" width="370" height="500">
+	<IMG align=left alt = «картинку_съела_кошка» border = 0  hspace = 2 vspace =2 src= "r4.jpg" width="370" height="500">
+
+	<IMG align=left alt = «картинку_съела_кошка» border = 0  hspace = 2 vspace =2 src= "r6.jpg" width="400" height="300">
+	<IMG align=left alt = «картинку_съела_кошка» border = 0  hspace = 2 vspace =2 src= "r3.jpg" width="400" height="300">
+	<IMG align=left alt = «картинку_съела_кошка» border = 0  hspace = 2 vspace =2 src= "ris2.jpg" width="400" height="300">
+	<IMG align=left alt = «картинку_съела_кошка» border = 0  hspace = 2 vspace =2 src= "ris.jpg" width="260" height="380">
+	<IMG align=left alt = «картинку_съела_кошка» border = 0  hspace = 2 vspace =2 src= "r12.jpg" width="720" height="500">
+	<IMG align=left alt = «картинку_съела_кошка» border = 0  hspace = 2 vspace =2 src= "r5.jpg" width="720" height="500">
+
+</BODY>
+</HTML>
